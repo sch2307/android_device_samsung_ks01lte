@@ -2,6 +2,6 @@
 
 set -e
 
-export DEVICE=hltexx
+export DEVICE=ks01ltexx
 export VENDOR=samsung
-./../hlte-common/extract-files.sh $@
+./../ks01lte-common/extract-files.sh $@
