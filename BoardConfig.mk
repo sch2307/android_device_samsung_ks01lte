@@ -20,13 +20,13 @@
 # definition file).
 #
 
-# inherit from common hlte
--include device/samsung/hlte-common/BoardConfigCommon.mk
+# inherit from common ks01lte
+-include device/samsung/ks01lte-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/hlte-common/BoardConfigVendor.mk
+-include vendor/samsung/ks01lte-common/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hltexx
+TARGET_OTA_ASSERT_DEVICE := ks01lte
 #set your kernel config here ATTENTION
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlteeur_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01lteeur_defconfig
