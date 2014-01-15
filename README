@@ -13,8 +13,16 @@ Depends on :
  * samsung_qcom-common - https://github.com/CyanogenMod/android_device_samsung_qcom-common/tree/cm-11.0
  * samsung-kernel-ks01lte - https://github.com/dridri/android_samsung_kernel_ks01lte
 
+ 
+Don't forget to go in device/samsung/ks01lte and execute 'extract-files.sh'
 
+Build with brunch ks01lte
 
+Compilation may fail because of an unresolved libtime_genoff.so lib, manually linking is enough to get around.
+(Create folders if doesn't exist)
+$ cd out/target/product/ks01lte/obj/lib
+$ ln -s ../../../../../../vendor/samsung/ks01lte/proprietary/vendor/lib/libtime_genoff.so
+Then restart brunch
 
 
 Original Readme:
