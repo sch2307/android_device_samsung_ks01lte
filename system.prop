@@ -7,3 +7,9 @@ rild.libargs=-d /dev/smd0
 
 telephony.lteOnGsmDevice=1
 ro.telephony.default_network=9
+
+persist.service.adb.enable=1
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+persist.sys.usb.config=mtp,adb

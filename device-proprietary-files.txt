@@ -1,4 +1,5 @@
 # Add device specific blobs here
 vendor/firmware/bcm2079xB4_firmware.ncd
 vendor/firmware/bcm2079xB4_pre_firmware.ncd
-lib/libsensirion_h_2.so
+lib/libsensirion_j1.so
+vendor/lib/libtime_genoff.so

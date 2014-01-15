@@ -2,7 +2,16 @@ Test: Forking from CyanogenMod/android_device_samsung_hltexx
 
 for
 
-Samsung Galaxy S4 LTE+ (LTEA) - i9506
+Samsung Galaxy S4 LTE+ (LTEA) - i9506 - ks01lte
+
+Original fork by faabak
+
+
+Depends on :
+ * ks01lte-common - https://github.com/dridri/android_device_samsung_ks01lte_common
+ * samsung_msm8960-common - https://github.com/CyanogenMod/android_device_samsung_msm8960-common/tree/cm-11.0
+ * samsung_qcom-common - https://github.com/CyanogenMod/android_device_samsung_qcom-common/tree/cm-11.0
+ * samsung-kernel-ks01lte - https://github.com/dridri/android_samsung_kernel_ks01lte
 
 
 
