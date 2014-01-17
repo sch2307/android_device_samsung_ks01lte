@@ -1,15 +1,104 @@
 # system.prop for ks01ltexx
 #
 
+# Samsung Specific Properties
+ro.build.PDA=I9506XXUBML5
+ro.build.hidden_ver=I9506XXUBML5
+ro.build.changelist=2210443
+ro.product_ship=true
+ro.chipname=MSM8974
+
+#################################################
+
 # cannot take spaces
 rild.libargs=-d /dev/smd0
-
+rild.libpath=/system/lib/libril-qc-qmi-1.so
 
 telephony.lteOnGsmDevice=1
 ro.telephony.default_network=9
 
+#################################################
+
+# debug
 persist.service.adb.enable=1
 ro.adb.secure=0
 ro.secure=0
 ro.debuggable=1
 persist.sys.usb.config=mtp,adb
+
+#################################################
+
+debug.sf.hw=1
+debug.egl.hw=1
+debug.composition.type=mdp
+ro.sf.compbypass.enable=0
+debug.mdpcomp.maxlayer=0
+debug.mdpcomp.logs=0
+debug.enabletr=true
+ro.opengles.version=131072
+dev.pm.dyn_samplingrate=1
+ro.bq.gpu_to_cpu_unsupported=1
+persist.sys.color.enhance=true
+
+persist.hwc.mdpcomp.enable=true
+
+#################################################
+
+#system props for the MM modules
+
+media.stagefright.enable-player=true
+media.stagefright.enable-http=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+
+#################################################
+
+# system props for the data modules
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+
+#system props for time-services
+persist.timed.enable=true
+
+# system prop for opengles version
+#ro.opengles.version=196608
+
+# System property for cabl
+ro.qualcomm.cabl=0
+
+#Simulate sdcard on /data/media
+persist.fuse_sdcard=true
+
+#system prop for Bluetooth hci transport
+ro.qualcomm.bt.hci_transport=smd
+
+#################################################
+
+#snapdragon value add features
+ro.qc.sdk.audio.ssr=false
+##fluencetype can be "fluence" or "fluencepro" or "none"
+ro.qc.sdk.audio.fluencetype=none
+
+# System property for Font Clarity
+persist.sys.font_clarity=0
+
+# VoLTE/IMS
+persist.radio.jbims=1
+
+# System property for storage_preload
+persist.sys.storage_preload=1
+
+#################################################
+
+#ADDITIONNAL
+ro.kernel.qemu=0
+ro.build.selinux=1
+ro.config.tima=1
+net.bt.name=Android
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+ro.qc.sdk.izat.premium_enabled=0
+ro.qc.sdk.izat.service_mask=0x4
+persist.gps.qc_nlp_in_use=0

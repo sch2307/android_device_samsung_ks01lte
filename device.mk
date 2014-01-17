@@ -22,6 +22,3 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/ks01lte/overlay-gsm
 
 # Inherit from ks01lte
 $(call inherit-product, device/samsung/ks01lte-common/ks01lte-common.mk)
-
-#LOCAL_KERNEL := device/samsung/ks01lte/kernel
-#PRODUCT_COPY_FILES := $(LOCAL_KERNEL):kernel
