@@ -29,4 +29,4 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ks01lte
 #set your kernel config here ATTENTION
-TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01eur_rev03_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_ks01skt_rev03_defconfig
